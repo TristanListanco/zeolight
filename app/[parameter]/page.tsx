@@ -30,6 +30,7 @@ import {
 
 const ParameterPage = ({ params: paramsPromise }) => {
   // Unwrap the params promise using React.use()
+  
   const params = use(paramsPromise);
   const [historicalData] = useState([
     { time: "00:00", ph: 7.1, turbidity: 1.7, tds: 142, conductivity: 248 },
